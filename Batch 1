@@ -1,0 +1,68 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent.*;
+import java.awt.event.ActionListener.*;
+import java.util.ArrayList;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+/*
+Weekly expense tracker
+ */
+
+public class App extends JFrame
+{
+    // Dropdown Menu for Days 
+    private JComboBox<String> dayBox;
+
+    // DropDown Menu for Categories 
+    private JComboBox<String> categoryBox;
+
+    // Text feild for amount 
+    private JTextField amountFeild;
+
+    // Text feild for description 
+    private JTextField descriptionFeild;
+
+    // Text area to display output
+    private JTextArea outputArea;
+
+    // ArrayList to store all expenses 
+    private ArrayList<Expense> expenses = new ArrayList<>();
+
+    // Constructor
+    public App()
+    {
+        // Window Title 
+        setTitle("Weekly Expense Tracker");
+
+        // Window Size 
+        setSize(700,500);
+
+        // Close application on exit 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Center Window on screen 
+        setLocationRelativeTo(null);
+
+        // Main Panel 
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(7,2,10,10)); 
+
+        // Days dropdown
+        String[] days = {
+            "Monday","Tuesday","Wednesday","Thursday","Fridays","Saturday","Sunday" 
+        };
+
+        dayBox = new JComboBox<>(days);
+
+        // Categories dropdown
+        String[] categories = {
+            "Groceries","Eating out","Petrol","Taxi","Bills","Rent","Others"
+        };
+
+        
+    }
+}
