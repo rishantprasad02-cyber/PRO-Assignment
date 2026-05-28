@@ -1,0 +1,103 @@
+Introduction  
+
+The purpose of this assignment was to develop a GUI based weekly expense tracker using Java. This application allows the user to record and manage their weekly expenses by selecting days, category, amount, and descriptions for the expenses.  
+
+This application was developed using Java swing for GUI. The main goal was to provide a simple and user friendly way for users to track their spending habits during the week. 
+
+ 
+
+System design 
+
+This program was required to include the below 
+
+. Dropdown menu for day selection 
+
+. Dropdown menu for category  
+
+. Amount field  
+
+. Description Field  
+
+. Add expense button  
+
+. Button to calculate weekly expense  
+
+. Button to display expense grouped by category  
+
+. Error handling input 
+
+GUI design 
+
+ 
+
+Categories used 
+
+. Groceries  
+
+. Eating out 
+
+. Petrol 
+
+. Taxi  
+
+. Bills  
+
+. Rent  
+
+. Others 
+
+ 
+
+Development Phase 
+
+Planning stage: 
+
+During this stage, the requirements were analyzed, and the overall structure of the program was planned. The program needed- 
+
+. Store expenses  
+
+. Display expenses 
+
+. Calculate total 
+
+. Handle invalid inputs  
+
+ 
+
+Expense storage 
+
+An Arraylist was used to store its contents  
+
+The objects were- 
+
+. Day 
+
+. Category 
+
+. Amount 
+
+.Description 
+
+ 
+
+Event handling  
+
+Buttons were connected using ActionListeners 
+
+The following buttons were implemented: 
+
+. Validate user input 
+
+. Create expense object  
+
+. Stores expense in Arraylist 
+
+. Total weekly expense button  
+
+. Display expense in category 
+
+ 
+
+Conclusion  
+
+The program successfully met requirements using Java swing and object-oriented programming. Error handling correct inputs were also taken into measure.  
